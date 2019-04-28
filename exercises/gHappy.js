@@ -18,7 +18,7 @@ module.exports.run = function(str) {
     if (isG(letter) && isHappy) {
       if (i === 0) {
         isHappy = isG(letters[i + 1]);
-      } else if (i > 0 && i < letters - 1) {
+      } else if (i > 0 && i < letters.length - 1) {
         isHappy = isG(letters[i - 1]) || isG(letters[i + 1]);
       } else {
         isHappy = isG(letters[i - 1]);
